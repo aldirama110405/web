@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MÜÜA Lovina</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Playfair Display', serif;
+            background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+            color: #FFD700;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            animation: fadeIn 1.5s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        header {
+            background-color: rgba(17, 17, 17, 0.9);
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(255, 215, 0, 0.5);
+            position: relative;
+        }
+        .logo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .logo-container img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-family: 'Poppins', sans-serif;
+        }
+        .nav-menu {
+            display: flex;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: background 0.3s;
+        }
+        .nav-menu a {
+            color: #FFD700;
+            text-decoration: none;
+            padding: 15px 20px;
+            font-size: 1.2rem;
+            font-weight: 500;
+            transition: color 0.3s, transform 0.3s;
+        }
+        .nav-menu a:hover {
+            color: #ffcc33;
+            transform: scale(1.1);
+        }
+        .service-buttons {
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .service-buttons a {
+            display: inline-block;
+            background: linear-gradient(45deg, #FFD700, #ffcc33);
+            color: #000;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 10px;
+            transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.5);
+        }
+        .service-buttons a:hover {
+            background: linear-gradient(45deg, #ffcc33, #ffb700);
+            transform: scale(1.1);
+            box-shadow: 0px 6px 15px rgba(255, 215, 0, 0.7);
+        }
+        .section-image {
+            width: 90%;
+            max-width: 600px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(255, 215, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="Logo.muua.jpg" alt="MÜÜA Lovina Logo">
+            <div class="logo">MÜÜA Lovina</div>
+        </div>
+    </header>
+    
+    <nav class="nav-menu">
+        <a href="#home">Beranda</a>
+        <a href="#dolphin-tour">Dolphin Tour</a>
+        <a href="#restaurant">MÜÜA Restaurant</a>
+        <a href="#testimonials">Testimoni</a>
+        <a href="#contact">Kontak</a>
+    </nav>
+    
+    <section id="home" class="description">
+        <p>Lovina, sebuah surga tersembunyi di Bali Utara, menyajikan pengalaman yang tiada duanya...</p>
+    </section>
+    
+    <section id="dolphin-tour">
+        <h2>Dolphin Tour</h2>
+        <img src="dolphin2.jpg" alt="Dolphin Tour" class="section-image">
+        <p>Rasakan pengalaman unik melihat lumba-lumba langsung di laut lepas dengan pemandangan matahari terbit yang memukau.</p>
+        <div class="service-buttons">
+            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20memesan%20Dolphin%20Tour!" target="_blank">Pesan via WhatsApp</a>
+        </div>
+    </section>
+    
+    <section id="restaurant">
+        <h2>MÜÜA Restaurant</h2>
+        <img src="MUUA.jpg" alt="MÜÜA Restaurant" class="section-image">
+        <p>Menikmati hidangan lezat dengan pemandangan sunset yang menakjubkan di tepi pantai.</p>
+        <div class="service-buttons">
+            <a href="https://www.google.com/maps/place/M%C3%9C%C3%9CA+Lovina/@-8.1600408,115.0068584,15z/data=!3m1!4b1!4m6!3m5!1s0x2dd19b63de12fa19:0xa1d4b7c5aae53e9b!8m2!3d-8.1600625!4d115.0253125!16s%2Fg%2F11k3fx1xc6?entry=ttu&g_ep=EgoyMDI1MDIyNi4xIKXMDSoASAFQAw%3D%3D" target="_blank">Temukan di Google Maps</a>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Kontak Kami</h2>
+        <p>Email: info@muualovina.com</p>
+        <p>Telepon: +62 812-3456-7890</p>
+        <p>Instagram: <a href="https://instagram.com/muualovina" target="_blank">@muualovina</a></p>
+        <p>Facebook: <a href="https://facebook.com/muualovina" target="_blank">MÜÜA Lovina</a></p>
+    </section>
+</body>
+</html>
+
+
+<section id="testimonials">
+    <h2>Testimoni</h2>
+    <div class="testimonial-container">
+        <div class="testimonial-slide">
+            <p>“Pengalaman yang luar biasa! Lumba-lumba sangat mengagumkan.”</p>
+            <h4>- Emma, UK</h4>
+        </div>
+        <div class="testimonial-slide">
+            <p>“Makanan di restoran MÜÜA sangat lezat, dan pemandangannya luar biasa.”</p>
+            <h4>- Thomas, Germany</h4>
+        </div>
+        <div class="testimonial-slide">
+            <p>“Saya benar-benar menikmati tur ini, sangat direkomendasikan.”</p>
+            <h4>- Sophia, France</h4>
+        </div>
+        <div class="testimonial-slide">
+            <p>“Keindahan Lovina dan keramahan staf membuat perjalanan ini tak terlupakan.”</p>
+            <h4>- Luca, Italy</h4>
+        </div>
+        <div class="testimonial-slide">
+            <p>“Dolphin tour yang terbaik di Bali!”</p>
+            <h4>- Erik, Netherlands</h4>
+        </div>
+        <div class="testimonial-slide">
+            <p>“Momen indah melihat lumba-lumba di laut lepas.”</p>
+            <h4>- Mia, Sweden</h4>
+        </div>
+        <div class="testimonial-slide">
+            <p>“Saya sangat terkesan dengan suasana di restoran MÜÜA.”</p>
+            <h4>- Oliver, Denmark</h4>
+        </div>
+        <div class="testimonial-slide">
+            <p>“Pemandangan sunset dari restoran sangat romantis.”</p>
+            <h4>- Anna, Spain</h4>
+        </div>
+        <div class="testimonial-slide">
+            <p>“Pelayanan yang sangat baik dan makanan yang luar biasa.”</p>
+            <h4>- Felix, Austria</h4>
+        </div>
+        <div class="testimonial-slide">
+            <p>“Saya pasti akan kembali lagi ke sini!”</p>
+            <h4>- Sophie, Switzerland</h4>
+        </div>
+    </div>
+</section>
+
+<style>
+    .testimonial-container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+    }
+    .testimonial-slide {
+        display: none;
+        padding: 20px;
+        background: rgba(255, 215, 0, 0.1);
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(255, 215, 0, 0.5);
+        font-size: 1.2rem;
+        color: #FFD700;
+    }
+    .testimonial-slide h4 {
+        margin-top: 10px;
+        font-weight: bold;
+    }
+</style>
+
+<script>
+    let index = 0;
+    function showTestimonial() {
+        let slides = document.querySelectorAll('.testimonial-slide');
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        index++;
+        if (index > slides.length) { index = 1; }
+        slides[index - 1].style.display = "block";
+        setTimeout(showTestimonial, 3000);
+    }
+    document.addEventListener("DOMContentLoaded", showTestimonial);
+</script>
+
+</body>
+</html>
+
+
+
+<style>
+    .testimonial-container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+    }
+    .testimonial-slide {
+        display: none;
+        padding: 20px;
+        background: rgba(255, 215, 0, 0.1);
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(255, 215, 0, 0.5);
+        font-size: 1.2rem;
+        color: #FFD700;
+    }
+    .testimonial-slide h4 {
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+    /* Responsiveness */
+    @media screen and (max-width: 768px) {
+        .testimonial-container {
+            width: 95%;
+        }
+        .testimonial-slide {
+            font-size: 1rem;
+            padding: 15px;
+        }
+    }
+</style>
+

@@ -1,0 +1,12 @@
+.menu-item {
+    cursor: pointer;
+}
+.menu-item:hover {
+    background: rgba(255, 215, 0, 0.2);
+}
+.menu-item {
+    cursor: pointer;
+}
+.menu-item a {
+    pointer-events: none; /* Mencegah event ganda di dalam div */
+}
